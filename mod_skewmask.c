@@ -146,7 +146,7 @@ static int __init skewmask_init (void) {
      */
     procfile = create_proc_entry(PROCFILENAME, 0644, NULL);
     if (procfile == NULL) {
-        remove_proc_entry(PROCFILENAME, &proc_root);
+        remove_proc_entry(PROCFILENAME, NULL);
         printk(KERN_ALERT "Error: unable to create /proc/%s\n",
                 PROCFILENAME);
         /* blame an out of memory error (ENOMEM). */
@@ -173,7 +173,7 @@ static int __init skewmask_init (void) {
  */
 static void __exit skewmask_exit (void) {
     dev_remove_pack(&myproto);
-    remove_proc_entry(PROCFILENAME, &proc_root);
+    remove_proc_entry(PROCFILENAME, NULL);
     printk(KERN_INFO "Removed /proc/%s\n", PROCFILENAME);
     printk(KERN_INFO "Uninstalling mod_skewmask\n");
 }
