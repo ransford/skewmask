@@ -1,0 +1,10 @@
+Ben Ransford <ransford@cs.umass.edu> originally wrote this code in December 2007
+in response to the Oakland 2005 paper of Kohno et al. [1].
+
+Copyright 2007, 2011 Ben Ransford <ransford AT cs.umass.edu> and Elisha
+Rosensweig <elisha AT cs.umass.edu>.
+
+References:
+[1] Tadayoshi Kohno, Andre Broido, kc claffy: Remote physical device
+    fingerprinting.  Proceedings of the 2005 IEEE Symposium on Security and
+    Privacy (Oakland), May 2005.
