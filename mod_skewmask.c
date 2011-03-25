@@ -76,9 +76,8 @@ mysendfn (struct sk_buff *skb,
         struct net_device *dv,
         struct packet_type *pt)
 {
-    u32 stamp_orig, stamp;
+    u32 stamp_orig;
     struct tcphdr* th = tcp_hdr(skb);
-    struct tcp_options_received tmp_opt;
     u32* tsptr;
     u32* ckptr;
 
