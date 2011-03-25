@@ -153,7 +153,6 @@ static int __init skewmask_init (void) {
     }
     procfile->read_proc = procfile_read;
     procfile->write_proc = procfile_write;
-    procfile->owner = THIS_MODULE; /* this is defined, don't worry */
     procfile->mode = S_IFREG | S_IRUGO | S_IWUSR;
     procfile->uid = procfile->gid = 0;
     procfile->size = 1; /* XXX */
